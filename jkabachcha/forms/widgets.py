@@ -60,7 +60,7 @@ class JsonTextWidget(forms.widgets.Textarea):
 
     class Media:
         css = {
-            'all': ('jkbachcha/css/jsoneditor.min.css',)
+            'all': ('jkabachcha/css/jsoneditor.min.css',)
         }
-        js = ('jkbachcha/js/jquery.min.js', 
-              'jkbachcha/js/jsoneditor.min.js', )
+        js = ('jkabachcha/js/jquery.min.js', 
+              'jkabachcha/js/jsoneditor.min.js', )

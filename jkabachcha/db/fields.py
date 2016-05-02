@@ -1,7 +1,7 @@
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 
-from jkbachcha.forms.widgets import JsonTextWidget
+from jkabachcha.forms.widgets import JsonTextWidget
 
 
 class JsonField(models.TextField):
