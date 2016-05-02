@@ -30,6 +30,12 @@ Django J(son) field is a package to create Json WYSIWYG model field. This is mai
     )
     ```
 
+* Collect static files by running
+
+    ```
+    python manage.py collectstatic
+    ```
+
 * Now import it in your models like
 
     ```

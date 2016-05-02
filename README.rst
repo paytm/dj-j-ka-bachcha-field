@@ -16,19 +16,25 @@ Quick start
     )
     ```
 
-2. Import it in your models like::
+2. Collect static files by running::
+
+    ```
+    python manage.py collectstatic
+    ```
+
+3. Import it in your models like::
 
     ```
     from jkabachcha.db.fields import JsonField
     ```
 
-3. Create model fields like::
+4. Create model fields like::
 
     ```
        json_text = JsonField()
     ```
 
-4. Use widget to override default Textarea in ModelAdmin class like::
+5. Use widget to override default Textarea in ModelAdmin class like::
 
     ```
         # import widget
