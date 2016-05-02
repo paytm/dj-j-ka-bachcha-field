@@ -22,7 +22,7 @@ CLASSIFIERS = [
 ]
 
 setup(
-    name='dj-j-ka-bachcha',
+    name='dj-jkabachcha',
     version=VERSION,
     packages=find_packages(),
     include_package_data=True,
