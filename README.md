@@ -1,4 +1,7 @@
 # dj-j-ka-bachcha-field
+
+[![PyPI version](https://badge.fury.io/py/dj-jkabachcha.svg)](https://badge.fury.io/py/dj-jkabachcha)
+
 Django J(son) field is a package to create Json WYSIWYG model field. This is mainly to have a cool editable view in Admin
 
 ## Installation
