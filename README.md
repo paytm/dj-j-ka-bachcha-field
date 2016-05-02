@@ -1,4 +1,4 @@
-# dj-j-ka-bachcha-field
+# dj-jkabachcha-field
 
 [![PyPI version](https://badge.fury.io/py/dj-jkabachcha.svg)](https://badge.fury.io/py/dj-jkabachcha)
 
@@ -21,19 +21,19 @@ Django J(son) field is a package to create Json WYSIWYG model field. This is mai
 
 ## Use
 
-* Add `jkbachcha` in your `INSTALLED_APPS` like
+* Add `jkabachcha` in your `INSTALLED_APPS` like
 
     ```
     INSTALLED_APPS = (
         ...
-        'jkbachcha',
+        'jkabachcha',
     )
     ```
 
 * Now import it in your models like
 
     ```
-    from myghanta.db.fields import JsonField
+    from jkabachcha.db.fields import JsonField
     ```
 
 * Create fields like
@@ -45,7 +45,7 @@ Django J(son) field is a package to create Json WYSIWYG model field. This is mai
 
     ```
     # import widget
-    from jkbachcha.forms.widgets import JsonTextWidget
+    from jkabachcha.forms.widgets import JsonTextWidget
 
     # in ModelAdmin class, like
 
