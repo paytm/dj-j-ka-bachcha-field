@@ -12,7 +12,7 @@ Quick start
     ```
     INSTALLED_APPS = (
         ...
-        'jkbachcha',
+        'jkabachcha',
     )
     ```
 
