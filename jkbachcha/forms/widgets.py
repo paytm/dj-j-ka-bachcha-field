@@ -12,7 +12,7 @@ class JsonTextWidget(forms.widgets.Textarea):
     '''
 
     def render(self, name, value, attrs=None):
-        base_html = super(JSONTextWidget, self).render(name, value, attrs)
+        base_html = super(JsonTextWidget, self).render(name, value, attrs)
         if not value:
             value = '{}'
         editor_html = '''

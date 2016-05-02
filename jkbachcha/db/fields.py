@@ -11,6 +11,6 @@ class JsonField(models.TextField):
         defaults = {}
         defaults.update(**kwargs)
         defaults.update({
-            'widget': JSONTextWidget
+            'widget': JsonTextWidget
         })
         return super(JsonField, self).formfield(**defaults)
