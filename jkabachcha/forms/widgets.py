@@ -1,3 +1,5 @@
+import json
+
 from django.db import models
 from django import forms
 
@@ -15,6 +17,15 @@ class JsonTextWidget(forms.widgets.Textarea):
         base_html = super(JsonTextWidget, self).render(name, value, attrs)
         if not value:
             value = '{}'
+
+        # there is a possibility that value may not be a valid json
+        # return empty json in that case, so that jsoneditor is
+        # rendered properly
+        try:
+            json_object = json.loads(value)
+        except ValueError as e:
+            value = '{}'
+
         editor_html = '''
         <button style="float:right" id="button_%(name)s">Toggle</button>
         <div id="jsoneditor_%(name)s" style="width: auto; height: auto;"></div>
