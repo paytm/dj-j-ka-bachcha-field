@@ -2,6 +2,9 @@
 Dj jkabachcha field
 ====================
 
+.. image:: https://badge.fury.io/py/dj-jkabachcha.svg
+    :target: https://badge.fury.io/py/dj-jkabachcha
+
 Dj jkabachcha is a Django app to create Json WYSIWYG field for Django models.
 
 Quick start
