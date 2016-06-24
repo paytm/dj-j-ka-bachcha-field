@@ -63,6 +63,11 @@ Django J(son) field is a package to create Json WYSIWYG model field. This is mai
     }
     ```
 
+## Note
+
+While using this field, if asked for default value while running `makemigrations`, make sure that you specify the value as empty string
+`''`. This is necessary to prevent unhasable dict type error.
+
 ## Screenshots
 
 * Empty Json Object
