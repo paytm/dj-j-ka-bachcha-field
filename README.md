@@ -1,6 +1,6 @@
 # dj-jkabachcha-field
 
-[![PyPI version](https://badge.fury.io/py/dj-jkabachcha.svg)](https://badge.fury.io/py/dj-jkabachcha)
+[![PyPI version](https://badge.fury.io/py/dj-jkabachcha.svg)](https://badge.fury.io/py/dj-jkabachcha) [![Build Status](https://travis-ci.org/paytm/dj-j-ka-bachcha-field.svg?branch=master)](https://travis-ci.org/paytm/dj-j-ka-bachcha-field)
 
 Django J(son) field is a package to create Json WYSIWYG model field. This is mainly to have a cool editable view in Admin. The package ships with a model field which has its widget as a Json WYSIYG. It also provides a widget which can be independently used to override existing model fields which are using TextArea. Overall there can be two ways 
 
