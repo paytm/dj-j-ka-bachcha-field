@@ -23,8 +23,8 @@ class JsonField(models.TextField):
 
     def to_python(self, value):
         try:
-            json_object = json.loads(value)
-        except ValueError as e:
+            json_object = json.loads(value)     # noqa
+        except ValueError as e:                 # noqa
             raise ValidationError(self.error_messages['invalid'], code='invalid')
 
         return value

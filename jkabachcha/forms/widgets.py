@@ -1,10 +1,9 @@
 import json
 
-from django.db import models
 from django import forms
 
-from django.templatetags.static import static
 from django.utils.safestring import mark_safe
+
 
 class JsonTextWidget(forms.widgets.Textarea):
 
@@ -14,7 +13,7 @@ class JsonTextWidget(forms.widgets.Textarea):
     '''
 
     def render(self, name, value, attrs=None):
-        base_html = super(JsonTextWidget, self).render(name, value, attrs)
+        super(JsonTextWidget, self).render(name, value, attrs)
         if not value:
             value = '{}'
 
@@ -22,8 +21,8 @@ class JsonTextWidget(forms.widgets.Textarea):
         # return empty json in that case, so that jsoneditor is
         # rendered properly
         try:
-            json_object = json.loads(value)
-        except ValueError as e:
+            json_object = json.loads(value)     # noqa
+        except ValueError as e:                 # noqa
             value = '{}'
 
         editor_html = '''
@@ -34,7 +33,7 @@ class JsonTextWidget(forms.widgets.Textarea):
         <script>
         // create the editor
         var container = document.getElementById("jsoneditor_%(name)s");
-        
+
         var editor_%(name)s = new JSONEditor(container);
 
         // set json
@@ -73,5 +72,5 @@ class JsonTextWidget(forms.widgets.Textarea):
         css = {
             'all': ('jkabachcha/css/jsoneditor.min.css',)
         }
-        js = ('jkabachcha/js/jquery.min.js', 
+        js = ('jkabachcha/js/jquery.min.js',
               'jkabachcha/js/jsoneditor.min.js', )
